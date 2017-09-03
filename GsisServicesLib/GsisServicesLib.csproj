@@ -47,6 +47,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Greek\CallServiceViewModel.cs" />
+    <Compile Include="Greek\ValidationException.cs" />
     <Compile Include="Greek\ClientInspector.cs" />
     <Compile Include="Connected Services\GreekLegalEntityInfoService\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -54,8 +56,10 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Greek\GreekLegalEntityService.cs" />
+    <Compile Include="Greek\GreekLegalEntityServiceException.cs" />
     <Compile Include="Greek\IGreekLegalEntityService.cs" />
     <Compile Include="Greek\InspectorBehavior.cs" />
+    <Compile Include="NotificationObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Greek\SecurityHeader.cs" />
   </ItemGroup>

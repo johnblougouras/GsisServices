@@ -102,7 +102,7 @@ namespace GsisServicesLib.Greek
 
                 if (response.pErrorRec_out != null && !string.IsNullOrEmpty(response.pErrorRec_out.errorCode))
                 {
-                    throw new ApplicationException($"Error code: {response.pErrorRec_out.errorCode}, Error Description: {response.pErrorRec_out.errorDescr}");
+                    throw new GreekLegalEntityServiceException($"Error code: {response.pErrorRec_out.errorCode}, Error Description: {response.pErrorRec_out.errorDescr}");
                 }
 
                 return response.RgWsPublicBasicRt_out;
@@ -115,3 +115,4 @@ namespace GsisServicesLib.Greek
         }
     }
 }
+
